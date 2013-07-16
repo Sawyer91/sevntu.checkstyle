@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class AvoidHidingCauseExceptionCheckTest extends BaseCheckTestSupport {
     final String message = "Cause exception 'e' was lost.";
-
     @Test
     public final void issue52_test() throws Exception {
         DefaultConfiguration checkConfig = createCheckConfig(AvoidHidingCauseExceptionCheck.class);
