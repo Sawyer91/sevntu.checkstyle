@@ -6,18 +6,17 @@
     <rule-group-metadata name="SevNTU checks" priority="1600">
 
         <rule-metadata name="%javaDocMethodCheckExtended.name" internal-name="javaDocMethodCheckExtended" parent="TreeWalker">
-           <alternative-name internal-name="com.github.sevntu.checkstyle.checks.javadoc.javaDocMethodCheckExtended"/>
+           <alternative-name internal-name="com.github.sevntu.checkstyle.checks.javadoc.JavaDocMethodCheckExtended"/>
             <description>%javadocMethodCheckExtended.desc</description>
-            <property-metadata name="isOverrideMethod" datatype="Boolean" default-value="true">
+            <property-metadata name="AllowCheckOverrideMethod" datatype="Boolean" default-value="true">
                 <description>%javaDocMethodCheckExtended.isOverrideMethod</description>
             </property-metadata>
-            <property-metadata name="isAbstract" datatype="Boolean" default-value="true">
+            <property-metadata name="AllowCheckAbstract" datatype="Boolean" default-value="true">
                 <description>%javaDocMethodCheckExtended.isAbstract</description>
             </property-metadata>
-            <property-metadata name="isFinal" datatype="Boolean" default-value="true">
+            <property-metadata name="AllowCheckFinal" datatype="Boolean" default-value="true">
                 <description>%javaDocMethodCheckExtended.isFinal</description>
             </property-metadata>
-                     
         </rule-metadata>
     </rule-group-metadata>
 </checkstyle-metadata>

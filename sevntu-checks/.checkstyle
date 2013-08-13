@@ -8,7 +8,7 @@
     <property name="checkstyle.importcontrol.file" value="/checkstyle/import-control.xml"/>
     <additional-data name="protect-config-file" value="false"/>
   </local-check-config>
-  <fileset name="all" enabled="true" check-config-name="new_cheks" local="true">
+  <fileset name="all" enabled="true" check-config-name="Sun Checks" local="false">
     <file-match-pattern match-pattern="." include-pattern="true"/>
   </fileset>
 </fileset-config>
