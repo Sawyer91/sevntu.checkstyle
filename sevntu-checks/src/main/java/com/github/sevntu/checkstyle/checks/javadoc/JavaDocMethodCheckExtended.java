@@ -907,19 +907,16 @@ public class JavaDocMethodCheckExtended extends AbstractTypeAwareCheck
     private boolean isFinal(DetailAST aAST)
     {
 
-        final DetailAST finalAST = aAST.findFirstToken(TokenTypes.MODIFIERS)
-                .findFirstToken(TokenTypes.FINAL);
-        return finalAST != null;
-
+        if (aAST.getType() == TokenTypes.FINAL)
+            return true;
+        return false;
     }
 
     //search Abstract classes  
 
     private boolean isAbstract(DetailAST aAST)
     {
-
-        if (aAST.getType() == TokenTypes.ABSTRACT
-                || aAST.getFirstChild().getType() == TokenTypes.ABSTRACT)
+        if (aAST.getType() == TokenTypes.ABSTRACT)
             return true;
         return false;
     }

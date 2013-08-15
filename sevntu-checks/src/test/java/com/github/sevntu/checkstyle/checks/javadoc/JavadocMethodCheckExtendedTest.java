@@ -50,7 +50,8 @@ public class JavadocMethodCheckExtendedTest extends BaseCheckTestSupport
         checkConfig.addAttribute("allowCheckAbstract", "true");
 
         String[] expected = {
-                "10:5: comment is require",
+                "10:9: comment is require",
+                "13:9: comment is require",
                 "14:9: comment is require",
                 "47:9: comment is require",
                 "47:9: comment is require",

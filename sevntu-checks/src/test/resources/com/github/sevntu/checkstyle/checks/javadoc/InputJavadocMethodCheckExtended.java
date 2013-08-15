@@ -10,13 +10,6 @@ public class ImportJavadocMethodCheckExtended
         public abstract boolean drawImage(Image img, int x, int y,
                 ImageObserver observer);
 
-        /**
-         * Graphics objects which are provided as arguments to the paint and
-         * update methods of Components are automatically disposed by the system
-         * when those methods return. Programmers should, for efficiency, call
-         * the dispose method when finished using a Graphics object only if it
-         * was created directly from a Component or another Graphics object.
-         */
         public abstract void dispose();
 
         /**
@@ -28,6 +21,10 @@ public class ImportJavadocMethodCheckExtended
         {
             dispose();
         }
+    }
+    
+    public abstract class Abs{
+        
     }
 
     public class Animal
