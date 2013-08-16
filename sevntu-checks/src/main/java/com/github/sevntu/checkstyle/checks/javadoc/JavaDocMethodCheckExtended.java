@@ -902,7 +902,10 @@ public class JavaDocMethodCheckExtended extends AbstractTypeAwareCheck
         return true;
     }
 
-    //search final classes   
+    /**
+     * @param aAST
+     * @return
+     */
 
     private boolean isFinal(DetailAST aAST)
     {
@@ -912,7 +915,10 @@ public class JavaDocMethodCheckExtended extends AbstractTypeAwareCheck
         return false;
     }
 
-    //search Abstract classes  
+    /**
+     * @param aAST
+     * @return
+     */
 
     private boolean isAbstract(DetailAST aAST)
     {

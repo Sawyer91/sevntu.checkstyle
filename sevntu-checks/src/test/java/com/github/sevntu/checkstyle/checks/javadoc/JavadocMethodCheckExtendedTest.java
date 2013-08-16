@@ -14,11 +14,12 @@ public class JavadocMethodCheckExtendedTest extends BaseCheckTestSupport
             throws Exception
     {
         String[] expected = {
-                "21:9: comment is require",
+                "10:9: comment is require",
+                "13:9: comment is require",
+                "30:9: comment is require",
+                "37:9: comment is require",
                 "47:9: comment is require",
-                "55:9: comment is require",
-                "65:9: comment is require",
-                "74:13: comment is require"
+                "56:13: comment is require"
 
         };
         verify(checkConfig, getPath("InputJavadocMethodCheckExtended.java"),
@@ -32,11 +33,12 @@ public class JavadocMethodCheckExtendedTest extends BaseCheckTestSupport
         checkConfig.addAttribute("allowCheckFinal", "true");
 
         String[] expected = {
-                "21:9: comment is require",
+                "10:9: comment is require",
+                "13:9: comment is require",
+                "30:9: comment is require",
+                "37:9: comment is require",
                 "47:9: comment is require",
-                "55:9: comment is require",
-                "65:9: comment is require",
-                "74:13: comment is require"
+                "56:13: comment is require",
 
         };
         verify(checkConfig, getPath("InputJavadocMethodCheckExtended.java"),

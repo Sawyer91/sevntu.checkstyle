@@ -23,9 +23,6 @@ public class ImportJavadocMethodCheckExtended
         }
     }
     
-    public abstract class Abs{
-        
-    }
 
     public class Animal
     {
@@ -37,7 +34,6 @@ public class ImportJavadocMethodCheckExtended
 
     public class Cat extends Animal
     {
-
         @Override
         public void speak()
         {
@@ -47,7 +43,7 @@ public class ImportJavadocMethodCheckExtended
 
     public class dog extends Animal
     {
-
+        
         public void speak() { // fail
                 System.out.println("WooF.");
             }
